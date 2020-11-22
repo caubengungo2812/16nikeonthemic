@@ -143,6 +143,8 @@ nav {
 	align-items: center;
 }
 
+
+
 .nav__icon-bar .search-bar .searchBar {
 	position: relative;
 	z-index: 2;
@@ -258,3 +260,4 @@ nav {
 	}
 }
 
+/*End Navigation Bar*/
