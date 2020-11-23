@@ -14,6 +14,9 @@ let textFilter = document.querySelector('.text__filter')
 let image = document.getElementsByClassName('setColor');
 let imgProduct = document.getElementById('imgProduct');
 
+let controlsFilter = document.getElementById("controlsFilter");
+let onControlsFilter = document.getElementsByClassName("filter--controls");
+
 
 let imgProductAll = document.getElementsByClassName("listImage");
 
@@ -77,3 +80,19 @@ window.addEventListener('scroll', () => {
         textFilter.style.fontSize = '2rem'
     }
 })
+
+
+//  filter controls
+for( let i = 0 ; i < onControlsFilter.length ; i++){
+       onControlsFilter[i].addEventListener("click",()=>{
+            if(controlsFilter.classList.contains("hidden")){ 
+                return controlsFilter.classList.remove("hidden");
+                console.log("dong");
+            }
+            else{
+                return controlsFilter.classList.add("hidden");
+                console.log("mo");
+            }
+             console.log("aaaa");
+        });
+}
