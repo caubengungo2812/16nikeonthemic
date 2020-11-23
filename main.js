@@ -17,20 +17,20 @@ let imgProduct = document.getElementById('imgProduct');
 
 let imgProductAll = document.getElementsByClassName("listImage");
 
-for( let p = 0 ; p < imgProductAll.length ; p++){
-        hoverImgChild(p);
+for (let p = 0; p < imgProductAll.length; p++) {
+    hoverImgChild(p);
 }
 
-function hoverImgChild(imgCurrent){
+function hoverImgChild(imgCurrent) {
     let imgProductCurrent = document.querySelector(`.listImage:nth-child(${imgCurrent + 1}) > .image > .image-hover`);
-     let imgChildCurrent = document.querySelectorAll(`.listImage:nth-child(${imgCurrent + 1}) > div.product__color > a > img`);
-      for(let i = 0 ; i < imgChildCurrent.length ; i++){
+    let imgChildCurrent = document.querySelectorAll(`.listImage:nth-child(${imgCurrent + 1}) > div.product__color > a > img`);
+    for (let i = 0; i < imgChildCurrent.length; i++) {
 
-           imgChildCurrent[i].addEventListener("mouseover",()=>{
-               imgProductCurrent.src = imgChildCurrent[i].src;
-           });
+        imgChildCurrent[i].addEventListener("mouseover", () => {
+            imgProductCurrent.src = imgChildCurrent[i].src;
+        });
 
-      }
+    }
 }
 
 
