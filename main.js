@@ -13,69 +13,27 @@ let body = document.querySelector('body')
 let textFilter = document.querySelector('.text__filter')
 let image = document.getElementsByClassName('setColor');
 let imgProduct = document.getElementById('imgProduct');
-let imgProduct2 = document.getElementById('imgProduct-2');
-let imgProduct3 = document.getElementById('imgProduct-3');
-let imgProduct4 = document.getElementById('imgProduct-4');
-let imgProduct5 = document.getElementById('imgProduct-5');
-let imgProduct6 = document.getElementById('imgProduct-6');
-let imgProduct7 = document.getElementById('imgProduct-7');
-let imgProduct8 = document.getElementById('imgProduct-8');
-let imgProduct9 = document.getElementById('imgProduct-9');
 
 
+let imgProductAll = document.getElementsByClassName("listImage");
 
-for (let i = 0; i < image.length; i++) {
-    image[i].addEventListener("mouseover", () => {
-        imgProduct.src = image[i].src;
-    });
-}
-for (let i = 0; i < image.length; i++) {
-    image[i].addEventListener("mouseover", () => {
-        imgProduct2.src = image[i].src;
-    });
+for( let p = 0 ; p < imgProductAll.length ; p++){
+        hoverImgChild(p);
 }
 
-for (let i = 0; i < image.length; i++) {
-    image[i].addEventListener("mouseover", () => {
-        imgProduct3.src = image[i].src;
-    });
+function hoverImgChild(imgCurrent){
+    let imgProductCurrent = document.querySelector(`.listImage:nth-child(${imgCurrent + 1}) > .image > .image-hover`);
+     let imgChildCurrent = document.querySelectorAll(`.listImage:nth-child(${imgCurrent + 1}) > div.product__color > a > img`);
+      for(let i = 0 ; i < imgChildCurrent.length ; i++){
+
+           imgChildCurrent[i].addEventListener("mouseover",()=>{
+               imgProductCurrent.src = imgChildCurrent[i].src;
+           });
+
+      }
 }
 
-for (let i = 0; i < image.length; i++) {
-    image[i].addEventListener("mouseover", () => {
-        imgProduct4.src = image[i].src;
-    });
-}
 
-for (let i = 0; i < image.length; i++) {
-    image[i].addEventListener("mouseover", () => {
-        imgProduct5.src = image[i].src;
-    });
-}
-
-for (let i = 0; i < image.length; i++) {
-    image[i].addEventListener("mouseover", () => {
-        imgProduct6.src = image[i].src;
-    });
-}
-
-for (let i = 0; i < image.length; i++) {
-    image[i].addEventListener("mouseover", () => {
-        imgProduct7.src = image[i].src;
-    });
-}
-
-for (let i = 0; i < image.length; i++) {
-    image[i].addEventListener("mouseover", () => {
-        imgProduct8.src = image[i].src;
-    });
-}
-
-for (let i = 0; i < image.length; i++) {
-    image[i].addEventListener("mouseover", () => {
-        imgProduct9.src = image[i].src;
-    });
-}
 
 
 

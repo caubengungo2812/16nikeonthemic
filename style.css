@@ -461,6 +461,9 @@ input#search:hover {
     height: 30px;
 
 }
+.filter__content {
+    margin-left: 3%;
+}
 
 .filter__content ul {
     display: flex
@@ -490,6 +493,8 @@ input#search:hover {
     background: white;
     width: 100%;
     transition: 0.4s;
+    margin-left: 3%;
+}
 }
 
 .scrollFilter {
