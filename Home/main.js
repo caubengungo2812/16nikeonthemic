@@ -26,15 +26,17 @@ for (let p = 0; p < imgProductAll.length; p++) {
 }
 
 function hoverImgChild(imgCurrent) {
-    let imgProductCurrent = document.querySelector(`.listImage:nth-child(${imgCurrent + 1}) > .image > .image-hover`);
+    let imgProductCurrent = document.querySelector(`.listImage:nth-child(${imgCurrent + 1}) > a > .image > .image-hover`);
     let imgChildCurrent = document.querySelectorAll(`.listImage:nth-child(${imgCurrent + 1}) > div.product__color > a > img`);
     for (let i = 0; i < imgChildCurrent.length; i++) {
 
         imgChildCurrent[i].addEventListener("mouseover", () => {
-            imgProductCurrent.src = imgChildCurrent[i].src;
+            imgProductCurrent.src = imgChildCurrent[i].getAttribute("src");
         });
 
+        console.log(imgProductCurrent);
     }
+    console.log(imgProductCurrent);
 }
 
 mobileMode.addEventListener("click", () => {
