@@ -5,6 +5,9 @@ let arrowLeft = document.querySelector('.arrowLeft')
 let arrowRight = document.querySelector('.arrowRight')
 let textContent = document.querySelector('.text__content')
 let nextContent = document.querySelector('.nextContent')
+let header = document.getElementById('headerGallery');
+let btnS = header.getElementsByClassName('select');
+    
 
 mobileMode.addEventListener("click", () => {
     modal.style.display = "block";
@@ -15,7 +18,6 @@ modal.addEventListener("click", () => {
     modal.style.display = "none";
     navbar__top.style.display = "none";
 });
-
 arrowLeft.addEventListener('click', () => {
     textContent.classList.toggle('moveLeft')
     nextContent.classList.toggle('moveRight')
@@ -31,3 +33,13 @@ arrowRight.addEventListener('click', () => {
     textContent.classList.remove('reverseMoveRight');
 
 })
+
+for (let i = 0; i < btnS.length; i++) {
+    btnS[i].addEventListener('click', () => {
+        let current = document.getElementsByClassName("active-image");
+        
+        current[0].className = current[0].className.replace(" active-image", " ");
+        btnS[i].className += " active-image";
+        console.log(current)
+    })
+}
