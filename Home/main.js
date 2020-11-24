@@ -12,13 +12,14 @@ let navbarFilter = document.querySelector('.nav__filter')
 let body = document.querySelector('body')
 let textFilter = document.querySelector('.text__filter')
 let image = document.getElementsByClassName('setColor');
-let imgProduct = document.getElementById('imgProduct');
-
+let imgProduct = document.getElementsByClassName('image-hover');
 let controlsFilter = document.getElementById("controlsFilter");
 let onControlsFilter = document.getElementsByClassName("filter--controls");
-
-
 let imgProductAll = document.getElementsByClassName("listImage");
+
+
+
+
 
 for (let p = 0; p < imgProductAll.length; p++) {
     hoverImgChild(p);
@@ -35,10 +36,6 @@ function hoverImgChild(imgCurrent) {
 
     }
 }
-
-
-
-
 
 mobileMode.addEventListener("click", () => {
     modal.style.display = "block";
@@ -97,7 +94,7 @@ window.addEventListener('scroll', () => {
 //         });
 // }
 
-for(let i = 0; i < onControlsFilter.length; i++){
+for (let i = 0; i < onControlsFilter.length; i++) {
     onControlsFilter[i].addEventListener('click', () => {
         controlsFilter.classList.toggle('visible__filter')
     })
