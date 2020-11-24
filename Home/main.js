@@ -12,19 +12,19 @@ let navbarFilter = document.querySelector('.nav__filter')
 let body = document.querySelector('body')
 let textFilter = document.querySelector('.text__filter')
 let image = document.getElementsByClassName('setColor');
-<<<<<<< HEAD:main.js
+
 let imgProduct = document.getElementById('imgProduct');
 let imgProductAll = document.getElementsByClassName("listImage");
-=======
-let imgProduct = document.getElementsByClassName('image-hover');
+
+
 let controlsFilter = document.getElementById("controlsFilter");
 let onControlsFilter = document.getElementsByClassName("filter--controls");
-let imgProductAll = document.getElementsByClassName("listImage");
 
 
 
 
->>>>>>> c705fcb4e0e5604ba6e8fcc316dfddef4b7b7884:Home/main.js
+
+
 
 for (let p = 0; p < imgProductAll.length; p++) {
     hoverImgChild(p);
@@ -81,11 +81,10 @@ window.addEventListener('scroll', () => {
         navbarFilter.classList.remove('scrollFilter')
         textFilter.style.fontSize = '2rem'
     }
-<<<<<<< HEAD:main.js
 
 })
-=======
-})
+
+
 
 
 //  filter controls
@@ -108,4 +107,4 @@ for (let i = 0; i < onControlsFilter.length; i++) {
         controlsFilter.classList.toggle('visible__filter')
     })
 }
->>>>>>> c705fcb4e0e5604ba6e8fcc316dfddef4b7b7884:Home/main.js
+
