@@ -455,6 +455,7 @@ input#search:hover {
 .section-1 {
     margin-left: 1%;
     margin-right: 3%;
+    width: 100%
 }
 
 .off-white {
@@ -496,16 +497,18 @@ input#search:hover {
     width: 100%;
     transition: 0.4s;
     margin-left: 3%;
-}
+    position: sticky;
 }
 
-.nav__filter .scrollFilter {
+
+.scrollFilter {
     position: fixed;
     top: 0;
     background: white;
     height: 85px;
     width: 100%;
     z-index: 1000;
+    margin-left: 0%;
 }
 
 .text__filter {
@@ -644,8 +647,8 @@ input#search:hover {
     transition: all 300ms ease 0s;
 }
 
-.visible__filter{
-	transform: translateX(-240px);
+.visible__filter {
+    transform: translateX(-240px);
     margin-left: -240px;
 }
 
@@ -754,8 +757,7 @@ input#search:hover {
 /*end section-2*/
 footer {
     background: black;
-<<<<<<< HEAD:style.css
-    width: 100%;
+    <<<<<<< HEAD: style.css width: 100%;
     height: 70%;
     display: flex;
     align-items: center;
@@ -806,7 +808,7 @@ footer>.menu__Footer {
     color: white;
     margin-bottom: 2rem;
     display: block;
-     text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .menu__Footer__right {
@@ -825,14 +827,12 @@ footer>.menu__Footer {
     color: white
 }
 
-.menu__Footer__right > ul > li >a.active {
+.menu__Footer__right>ul>li>a.active {
     color: white;
     margin-bottom: 2rem;
     display: block;
     text-transform: uppercase;
-=======
-
-    padding-top: 4rem;
+    =======padding-top: 4rem;
 
     line-height: 3rem;
 }
@@ -940,5 +940,5 @@ footer>div>.social>a:last-child {
 
 .guides>ul>li>a:hover {
     color: white;
->>>>>>> c705fcb4e0e5604ba6e8fcc316dfddef4b7b7884:Home/style.css
+    >>>>>>>c705fcb4e0e5604ba6e8fcc316dfddef4b7b7884: Home/style.css
 }
