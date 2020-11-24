@@ -7,7 +7,10 @@ let textContent = document.querySelector('.text__content')
 let nextContent = document.querySelector('.nextContent')
 let header = document.getElementById('headerGallery');
 let btnS = header.getElementsByClassName('select');
-    
+let buttonHeader = document.getElementById('buttonSize');
+let btnSize = buttonHeader.getElementsByClassName('button-size');
+
+
 
 mobileMode.addEventListener("click", () => {
     modal.style.display = "block";
@@ -41,5 +44,14 @@ for (let i = 0; i < btnS.length; i++) {
         current[0].className = current[0].className.replace(" active-image", " ");
         btnS[i].className += " active-image";
         console.log(current)
+    })
+}
+
+for(let j = 0; j < btnSize.length; j++){
+    btnSize[j].addEventListener('click', ()=>{
+        let currentSize = document.getElementsByClassName('button-active');
+
+        currentSize[0].className = currentSize[0].className.replace('button-active', '');
+        btnSize[j].className += ' button-active'
     })
 }
