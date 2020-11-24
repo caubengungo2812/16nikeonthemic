@@ -148,7 +148,7 @@ header.navbar {
     border: 1px solid transparent;
     border-radius: 50%;
 
-    background-color: #ccc;
+    background-color: white;
 
     cursor: pointer;
 
@@ -461,6 +461,7 @@ input#search:hover {
     height: 30px;
 
 }
+
 .filter__content {
     margin-left: 3%;
 }
@@ -499,12 +500,12 @@ input#search:hover {
 }
 
 .scrollFilter {
-    position: fixed!important;
-    height: 85px!important;
-    top: 0!important;
-    z-index: 10!important;
-    width: 100%!important;
-    transition: 0.4s!important;
+    position: fixed !important;
+    height: 85px !important;
+    top: 0 !important;
+    z-index: 10 !important;
+    width: 100% !important;
+    transition: 0.4s !important;
 }
 
 .text__filter {
@@ -635,29 +636,34 @@ input#search:hover {
 
     display: flex;
 }
-#controlsFilter{
+
+#controlsFilter {
     width: 23.2rem;
-
     margin-right: 1rem;
-
     background-color: red;
+    display: none
 }
-.section-2 > .section-2__products {
+
+.visible__filter{
+	display: block!important;
+}
+
+.section-2>.section-2__products {
     width: 100%;
-    height: auto; 
+    height: auto;
 
     line-height: 3rem;
-    
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.section-2 > .section-2__products >.listImage {
+.section-2>.section-2__products>.listImage {
     width: 32.5%;
 
     margin-bottom: 2%;
-/*    padding: 1rem;*/
+    /*    padding: 1rem;*/
 }
 
 .image>img {
@@ -669,14 +675,16 @@ input#search:hover {
 .listImage:hover>.text {
     display: none
 }
+
 .product__color {
     display: none
 }
-.listImage:hover > .product__color{
+
+.listImage:hover>.product__color {
     display: inline-block;
 }
 
-.product__color > a > img {
+.product__color>a>img {
     display: inline-block;
 
     width: 50px;
@@ -743,7 +751,7 @@ input#search:hover {
 }
 
 /*end section-2*/
-footer{
+footer {
     background: black;
 
     padding-top: 4rem;
@@ -751,7 +759,7 @@ footer{
     line-height: 3rem;
 }
 
-footer >div{
+footer>div {
     width: 100%;
     height: auto;
     display: flex;
@@ -764,18 +772,18 @@ footer >div{
     border-bottom: 0.3px solid gray;
 }
 
-footer > div > .textUppercase{
+footer>div>.textUppercase {
     display: block;
 }
 
-footer  > div > .textUppercase > ul > li >a{
+footer>div>.textUppercase>ul>li>a {
     color: white;
 
     font-size: 1.4rem;
     text-transform: uppercase;
 }
 
-footer > div > .menu__Footer {
+footer>div>.menu__Footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -783,62 +791,75 @@ footer > div > .menu__Footer {
     width: 25%;
 
 }
-.menu__Footer__left > ul > li >a , .menu__Footer__right > ul > li >a {
+
+.menu__Footer__left>ul>li>a,
+.menu__Footer__right>ul>li>a {
     color: gray;
 }
-.menu__Footer__left > ul > li >a:hover , .menu__Footer__right > ul > li >a:hover {
+
+.menu__Footer__left>ul>li>a:hover,
+.menu__Footer__right>ul>li>a:hover {
     color: white;
 }
-.menu__Footer__left > ul > li:first-child > a , .menu__Footer__right > ul > li:first-child >a {
+
+.menu__Footer__left>ul>li:first-child>a,
+.menu__Footer__right>ul>li:first-child>a {
     color: white;
     text-transform: uppercase;
 }
 
-footer > div > .social{
+footer>div>.social {
     width: 50%;
 
     display: flex;
     justify-content: flex-end;
 }
 
-footer > div > .social > a {
+footer>div>.social>a {
     color: gray;
     margin: 0px 8px;
 
     font-size: 3.6rem;
 }
-footer > div > .social > a:hover{
+
+footer>div>.social>a:hover {
     color: white;
 }
-footer > div > .social > a:last-child{
+
+footer>div>.social>a:last-child {
     margin-right: 0px;
 }
 
-.location{
+.location {
     display: flex;
     justify-content: space-between;
 
     margin-top: 1rem;
 }
 
-.myLocation > a{
+.myLocation>a {
     color: white;
 }
-.myLocation > a:last-child{
+
+.myLocation>a:last-child {
     font-size: 1.3rem;
 }
-.guides > ul > li{
+
+.guides>ul>li {
     display: inline-block;
 
     margin: 0px 5px;
 }
-.guides > ul > li:last-child{
+
+.guides>ul>li:last-child {
     margin-right: 0px;
 }
-.guides > ul > li > a{
+
+.guides>ul>li>a {
     color: gray;
     font-size: 1.3rem;
 }
-.guides > ul > li > a:hover{
+
+.guides>ul>li>a:hover {
     color: white;
 }

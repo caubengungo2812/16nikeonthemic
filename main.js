@@ -83,16 +83,22 @@ window.addEventListener('scroll', () => {
 
 
 //  filter controls
-for( let i = 0 ; i < onControlsFilter.length ; i++){
-       onControlsFilter[i].addEventListener("click",()=>{
-            if(controlsFilter.classList.contains("hidden")){ 
-                return controlsFilter.classList.remove("hidden");
-                console.log("dong");
-            }
-            else{
-                return controlsFilter.classList.add("hidden");
-                console.log("mo");
-            }
-             console.log("aaaa");
-        });
+// for( let i = 0 ; i < onControlsFilter.length ; i++){
+//        onControlsFilter[i].addEventListener("click",()=>{
+//             if(controlsFilter.classList.contains("hidden")){ 
+//                 return controlsFilter.classList.remove("hidden");
+//                 console.log("dong");
+//             }
+//             else{
+//                 return controlsFilter.classList.add("hidden");
+//                 console.log("mo");
+//             }
+//              console.log("aaaa");
+//         });
+// }
+
+for(let i = 0; i < onControlsFilter.length; i++){
+    onControlsFilter[i].addEventListener('click', () => {
+        controlsFilter.classList.toggle('visible__filter')
+    })
 }
