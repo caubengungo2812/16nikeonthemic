@@ -499,13 +499,13 @@ input#search:hover {
 }
 }
 
-.scrollFilter {
-    position: fixed !important;
-    height: 85px !important;
-    top: 0 !important;
-    z-index: 10 !important;
-    width: 100% !important;
-    transition: 0.4s !important;
+.nav__filter .scrollFilter {
+    position: fixed;
+    top: 0;
+    background: white;
+    height: 85px;
+    width: 100%;
+    z-index: 1000;
 }
 
 .text__filter {

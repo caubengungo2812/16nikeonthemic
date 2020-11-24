@@ -22,7 +22,7 @@ let onControlsFilter = document.getElementsByClassName("filter--controls");
 
 
 
-
+console.log(navbarFilter)
 
 
 
@@ -70,12 +70,13 @@ btnFilter.addEventListener('click', () => {
     visibleFilter.classList.toggle('show')
 })
 
-
+console.log(navbarFilter.offsetTop)
 window.addEventListener('scroll', () => {
 
     if (window.pageYOffset > navbarFilter.offsetTop) {
         navbarFilter.classList.add('scrollFilter')
-        textFilter.style.fontSize = '1.5rem'
+        textFilter.style.fontSize = '1.5rem';
+
 
     } else {
         navbarFilter.classList.remove('scrollFilter')
@@ -107,4 +108,3 @@ for (let i = 0; i < onControlsFilter.length; i++) {
         controlsFilter.classList.toggle('visible__filter')
     })
 }
-
