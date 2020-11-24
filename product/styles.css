@@ -272,6 +272,7 @@ input#search:hover {
 /*End Navigation Bar*/
 
 @media screen and (max-width: 1375px) {
+
     .navbar__top {
         width: 30rem;
         height: 100vh;
@@ -457,8 +458,6 @@ input#search:hover {
 
 .container {
     display: flex;
-
-
 }
 
 .container>.image-gallery {
@@ -475,6 +474,36 @@ input#search:hover {
 .image-gallery>a>img:nth-child(1) {
     position: relative;
     z-index: 1
+}
+
+.slideMobile {
+    position: absolute;
+    top: 48rem;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0
+}
+
+.arrow__mobile__left {
+    background: white;
+    margin-left: 4px;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.arrow__mobile__right {
+    background: white;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 4px;
+    cursor: pointer;
+    margin-left: 376px;
+
 }
 
 .btn__Rate {
@@ -499,11 +528,44 @@ input#search:hover {
     padding-left: 17px;
 }
 
+
 .p-btn {
     padding-right: 17px;
     padding-left: 4px;
 
 }
+
+@media screen and (max-width: 875px) {
+    .section-1>.container {
+        flex-direction: column;
+        
+    }
+
+    .image-gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap !important;
+        overflow: scroll;
+        width: 100%!important;
+    }
+
+    .image-gallery>a>img {
+        width: 382px;
+        height: 464px;
+
+    }
+
+    .btn__Rate {
+        display: none
+    }
+
+   
+   
+
+
+}
+
+/**/
 
 .infor-gallery__text {
     display: flex;
@@ -529,17 +591,146 @@ input#search:hover {
 
 .infor-gallery__price {
     padding-top: 2rem;
-    margin-right: 2rem: 
+    margin-right: 2rem:
 }
 
-.infor-gallery__image > img {
+.infor-gallery__image>img {
     border-radius: 0.5rem;
     cursor: pointer;
 }
+
 .active-image {
     border: 1px solid black;
 }
 
-.infor-gallery__image > img:hover {
+.infor-gallery__image>img:hover {
     border: 1px solid black;
+}
+
+@media screen and (max-width: 875px) {
+    .infor-gallery__text>.text__inside {
+        display: none;
+    }
+
+    .infor-gallery__price {
+        display: none
+    }
+
+    .infor-gallery__image {
+        display: flex;
+    }
+
+    .infor-gallery__image>img {
+        width: 125px;
+        height: 125px;
+    }
+}
+
+/**/
+
+.size {
+    margin-top: 4rem
+}
+
+.size>.size__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-size {
+    font-size: 1.7rem;
+}
+
+.guide-size {
+    font-size: 1.7rem;
+    color: #ccc
+}
+
+.button__size {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    margin-top: 4rem;
+}
+
+.button__size>button {
+    height: 48px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid #d5d5d5;
+    outline: none;
+}
+
+.button__size>button.button-active {
+    border: 1px solid black
+}
+
+.button__size>button:hover {
+    border: 1px solid black;
+}
+
+.buttonBag {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem
+}
+
+.buttonBag>.add__to__bag {
+    width: 100%;
+    padding: 18px 24px;
+    border-radius: 30px;
+    border: none;
+    background: black;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    font-size: 15px;
+    transition: all 0.3s linear
+}
+
+.buttonBag>.add__to__bag:hover {
+    opacity: 0.8 !important;
+}
+
+.buttonBag>.favourite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 18px 24px;
+    border-radius: 30px;
+    border: 1px solid #f5f5f5;
+    background: transparent;
+    font-size: 15px;
+    transition: all 0.3s linear
+}
+
+.buttonBag>.favourite:hover {
+    border: 1px solid #ccc;
+}
+
+.buttonBag>.favourite>.text-favourite {
+    padding-right: 4px;
+    text-transform: capitalize;
+}
+
+.buttonBag>.favourite>.hearFavour {
+    font-size: 18px;
+}
+
+/**/
+
+.text-content-size {
+   background: #f5f5f5;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.text-content-size > p{
+    color: #757575;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    font-size: 16px;
 }
