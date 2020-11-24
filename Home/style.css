@@ -641,11 +641,12 @@ input#search:hover {
     width: 23.2rem;
     margin-right: 1rem;
     background-color: red;
-    display: none
+    transition: all 300ms ease 0s;
 }
 
 .visible__filter{
-	display: block!important;
+	transform: translateX(-240px);
+    margin-left: -240px;
 }
 
 .section-2>.section-2__products {
