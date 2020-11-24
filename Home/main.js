@@ -12,11 +12,8 @@ let navbarFilter = document.querySelector('.nav__filter')
 let body = document.querySelector('body')
 let textFilter = document.querySelector('.text__filter')
 let image = document.getElementsByClassName('setColor');
-
 let imgProduct = document.getElementById('imgProduct');
 let imgProductAll = document.getElementsByClassName("listImage");
-
-
 let controlsFilter = document.getElementById("controlsFilter");
 let onControlsFilter = document.getElementsByClassName("filter--controls");
 
